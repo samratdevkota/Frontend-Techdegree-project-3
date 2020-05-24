@@ -12,17 +12,17 @@
     <header>
         <h1>The Code Review</h1>
         <section class="banner">
-            <h2>Sign up for our newsletter</h2>
+            <h2>Sign Up for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
         </section>
     </header>
-    <hr>
 
 
 
     <form action="index.html" method="post" class="registration">
         <fieldset class="contact-info">
             <legend>Contact Information</legend>
+            <div class="flex_wrapper">
             <label for="full_name">Full Name</label>
             <input type="text" name="user_name" id="full_name" placeholder="Required" required>
             <br>
@@ -99,29 +99,28 @@
                 </select><br>
             <label for="zip">Zip Code</label>
             <input type="text" name="user_zipcode" id="zip" maxlength="5" placeholder="Your zipcode">
+          </div>
         </fieldset>
 
         <fieldset class="newsletter">
             <legend>Newsletter</legend>
+            <div class="flex_wrapper">
             <p>Select the newsletters you would like to receive</p>
-            <br>
 
-            <div class="checkbox-radio-item">
+            <div class="type-option">
               <input type="checkbox" name="newsletter" value="html" id="newsletter">
               <label class="inline" for="newsletter">HTML News</label>
-            </div>
-            <div class="checkbox-radio-item">
+
               <input type="checkbox" name="newsletter" value="css" id="css">
               <label class="inline" for="css">CSS News</label>
-            </div>
-            <div class="checkbox-radio-item">
+
               <input type="checkbox" name="newsletter" value="js" id="js">
               <label class="inline" for="js">JavaScript News</label>
             </div>
 
             <p>Newsletter format</p>
 
-            <div class="format-option">
+            <div class="format-options">
               <input type="radio" name="format" id="html" value="html" checked="checked"><label for="html">HTML</label>
               <br>
               <input type="radio" name="format" id="plain-text" value="plain-text"><label for="plain-text">Plain text</label>
@@ -129,6 +128,7 @@
 
             <label for="other-topics">Other topics you'd like to hear about</label>
             <textarea name="other-topics" id="other-topics" cols="30" rows="10" placeholder="What else would you like to know?"></textarea>
+          </div>
           </fieldset>
           <button type="submit">Sign Up</button>
     </form>
