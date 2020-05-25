@@ -114,10 +114,11 @@ select:focus,
     background-color: snow;
 }
 
-.type_option {
+.type-option {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
 }
+
 
 .newsletter label {
     margin: 7px 15px;
@@ -127,7 +128,7 @@ select:focus,
 .newsletter input {
     cursor: pointer;
 }
-.newsletter label[for=other_topics] {
+.newsletter label[for=other-topics] {
     margin-left: 0;
 }
 .newsletter textarea {
